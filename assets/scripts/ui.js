@@ -1,9 +1,11 @@
 'use strict';
 
+
+// const events=require('./ui');
 // handlebars
 let displayBooks = function(books){
   // debugger;
-  let jobListingTemplate = require('../template/jobs.handlebars');
+  let jobListingTemplate = require('./templates/books.handlebars');
 
   // append content from GET request using handlebars
   $('.content').append(jobListingTemplate({
@@ -26,5 +28,6 @@ const success = (data) => {
 
 module.exports = {
   success,
+  displayBooks
 
 };

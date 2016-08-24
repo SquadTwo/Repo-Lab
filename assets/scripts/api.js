@@ -2,13 +2,13 @@
 
 const app = require('./app');
 
-const index = function() {
+const getBooks = function() {
   return $.ajax({
     method: 'GET',
-    url: app.host + '/books'
+    url: app.api + '/books'
   });
 };
 
 module.exports = {
-  index,
+  getBooks
 };
