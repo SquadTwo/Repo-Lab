@@ -6,7 +6,7 @@ const api=require('./api');
 
 const onGetBooks = function (event) {
 
-  debugger;
+  // debugger;
   event.preventDefault();
   api.getBooks()
     .done(ui.success)

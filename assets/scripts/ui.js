@@ -3,15 +3,15 @@
 
 // const events=require('./ui');
 // handlebars
-let displayBooks = function(books){
-  // debugger;
-  let jobListingTemplate = require('./templates/books.handlebars');
+let displayBooks = function(data){
+  console.log(data.books);
+  let bookTemplate = require('./templates/books.handlebars');
 
   // append content from GET request using handlebars
-  $('.content').append(jobListingTemplate({
+  $('.content').append(bookTemplate({
 
   // debugger;
-  books
+  books:data.books
   }));
 };
 
