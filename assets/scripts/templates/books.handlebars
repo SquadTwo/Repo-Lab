@@ -1,0 +1,15 @@
+{{#each books}}
+
+
+{{> partial}}
+
+    <h1> <small>Title: {{author}}</small></h1>
+    <div>
+      {{#if desc}}
+        {{desc}}
+      {{else}}
+        No author.
+      {{/if}}
+    </div>
+
+  {{/each}}
